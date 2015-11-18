@@ -17464,6 +17464,8 @@ fieldset[disabled] .cover.overlay .btn-cover.active {
     line-height: 56px;
 }
 .navbar-nav > li > a.dropdown-toggle img {
+	height: 60px;
+width: 60px;
     margin-top: -2px;
     margin-right: 3px;
 }
@@ -17789,6 +17791,7 @@ fieldset[disabled] .cover.overlay .btn-cover.active {
     display: block;
     width: 100%;
     padding-top: 20px;
+	
 }
 .sidebar-block .profile  img{
     width: 110px;
@@ -17921,7 +17924,7 @@ fieldset[disabled] .cover.overlay .btn-cover.active {
               top: 5px;
               font-size: 14px;
               color: #000; 
-              background: #ccc;
+              background: #25ad9f;
               padding: 3px;
               border-radius: 50px;
 }
@@ -17947,7 +17950,7 @@ fieldset[disabled] .cover.overlay .btn-cover.active {
 	/* Make the modal appear when targeted */
 	#coverpic:target {
 		opacity: 1;
-		top:15%;
+		margin-top:400px;
 		visibility: visible;
 	}
 #coverpic .header,#coverpic .footer {
@@ -18852,3 +18855,133 @@ screen and (max-height: 300px) {
 }
 
 
+
+#header_container-home {
+    height: 120px;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+#header-home {
+    line-height: 50px;
+    margin: 0 auto;
+    width: 100%;
+    background: #25ad9f;
+    padding-left: 20px;
+    position: fixed;
+    height: 120px;
+    -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-home-login{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    height: 45px;
+    padding: 5px;
+    margin-right: 0px;
+    margin-top: 30px;
+}
+.signup{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    height: 55%;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo-home img{
+    margin-top: 20px;
+    height: 90px;
+}
+.content-scroller-home {
+
+    left: 10%;
+    right: 0px;
+    position: absolute;
+    height: 100%;
+}
+.content-home {
+    width: 80%;
+
+    float: left;
+    background: #f2f2f4;
+    margin: 45px 0 10px 10px;
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.join
+{
+  line-height: 25px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+  font-size: 20px;
+  font-family: Arial;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+.button{
+    vertical-align: top; 
+    line-height: 1.5;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #25ad9f;
+    border-bottom: 2px solid #0c280f;
+    height: 33px;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.inner h1
+{
+  color: #25ad9f;
+  font-size: 25px;
+}
+.facebbok {
+    margin-left: -15px;
+    border: 1px #25ad9f solid;
+    border-bottom: 3px #25ad9f solid;
+    padding: 7px 0px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-image: url("../images/face.png");
+    width: 100%;
+    background-color: transparent;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 5px 5px;
+    color: #25ad9f;text-align: left;
+}
+.twitter {
+    margin-left: -5px;
+    border: 1px #25ad9f solid;
+    border-bottom: 3px #25ad9f solid;
+    padding: 7px 0px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-image: url("../images/twitter.png");
+    width: 100%;
+    background-color: transparent;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 5px 5px;
+    color: #25ad9f;
+    text-align: left;
+}
