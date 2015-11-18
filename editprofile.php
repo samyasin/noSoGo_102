@@ -2,8 +2,6 @@
 require_once 'includes/header.php';
 require_once 'includes/user.php';
 $userModel = new user();
-$userSet   = $userModel->fetchById($_SESSION['user_id']);
-$userSet   = $userSet[0];
 if(isset($_POST['submit'])){
     $userModel = new user();
     if($_FILES['profile_image']['error'] === 0){
@@ -24,6 +22,9 @@ if(isset($_POST['submit'])){
         echo "failure";
     }
 }
+$userSet   = $userModel->fetchById($_SESSION['user_id']);
+$userSet   = $userSet[0];
+
 ?>
 <div id="content">
     <div class="container-fluid">
@@ -42,7 +43,7 @@ if(isset($_POST['submit'])){
                                     <div class="col-sm-10">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <input type="text" class="form-control" placeholder="username" name="username">
+                                            <input type="text" class="form-control" placeholder="username" name="username" value="<?php echo $userSet['username']; ?>">
                                         </div>
                                     </div>
                                 </div>
