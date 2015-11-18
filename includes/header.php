@@ -52,8 +52,6 @@ $userSet = $userSet[0];
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="profile.php">Profile</a>
                                 </li>
-                                <li><a href="message.php">Messages</a>
-                                </li>
                                 <li><a href="logout.php">Logout</a>
                                 </li>
                             </ul>
@@ -74,120 +72,12 @@ $userSet = $userSet[0];
                 </div>
                 <div class="sidebar-block">
                     <div class="category"><i class="fa fa-info-circle"></i><a href="profile.php">  Profile</a></div>
-                    <div class="category"><i class="fa fa-info-circle"></i><a href="message.php">  Message</a></div>
+                  
                     <div class="category"><i class="fa fa-users"></i><a href="friends.php">  Friends</a></div>
                     <div class="category"><i class="fa fa-picture-o"></i> <a href="photo.php"> Photos</a></div>
                     <div class="category"><i class="fa fa-comments"></i> <a href="interest.php"> Interest</a></div>
                     <div class="category"><i class="fa fa-cogs"></i> <a href="setting.php"> Setting</a></div>
                 </div>
-                <div class="sidebar-block">
-                    <div class="category">Interest</div>
-
-                    <button class="btn btn-default btn-circle"><i class="fa fa-newspaper-o"></i><span>13</span></button>
-                    <button class="btn btn-default btn-circle"><i class="fa fa-futbol-o"></i><span>13</span></button>
-                    <button class="btn btn-default btn-circle"><i class="fa icon-in-love"></i><span>13</span></button>
-                    <div class="smile"><img src="images/Entertainment.png" /><span>15</span></div>
-
-                </div>
-
-                <div class="sidebar-block">
-                    <div class="category">Friends</div>
-                    <div class="sidebar-photos">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place1.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place2.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place3.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/food1.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/food1.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place3.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place2.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place1.jpg" alt="people" />
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-
-
-
-                <div class="sidebar-block">
-                    <div class="category">Photos</div>
-                    <div class="sidebar-photos">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place1.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place2.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place3.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/food1.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/food1.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place3.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place2.jpg" alt="people" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/place1.jpg" alt="people" />
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
+              
             </div>
         </div>
