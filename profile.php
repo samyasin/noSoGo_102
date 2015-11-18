@@ -6,18 +6,7 @@
             <img src="images/profile-cover.jpg" alt="cover" />
             <a href="#coverpic" class="btn btn-cover"><i class="fa fa-pencil fa-fw"></i></a>
         </div>
-        <div class="panel panel-default share">
-            <div class="input-group">
-                <div class="input-group-btn">
-                    <a class="btn btn-primary" href="#"><i class="fa fa-envelope"></i> Send</a>
-                </div>
-
-
-                <input type="text" class="form-control share-text" placeholder="Write message..." />
-            </div>
-
-
-        </div>
+      
         <div class="row">
             <div class="col-md-12">
 
