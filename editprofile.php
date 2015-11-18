@@ -1,14 +1,14 @@
 <?php 
 require_once 'includes/header.php';
 require_once 'includes/user.php';
-$userModel = new user();
+
 if(isset($_POST['submit'])){
     $userModel = new user();
     if($_FILES['profile_image']['error'] === 0){
         $userModel->profilePic = $_FILES['profile_image']['name'];
         move_uploaded_file($_FILES['profile_image']['tmp_name'],'images/profile_images/'.$_FILES['profile_image']['name'] );
     }else{
-        $userModel->profilePic = "";
+        $userModel->profilePic = $userSet['image_pic'];
     }
     $userModel->email    = $_POST['email'];
     $userModel->username = $_POST['username'];
@@ -22,8 +22,6 @@ if(isset($_POST['submit'])){
         echo "failure";
     }
 }
-$userSet   = $userModel->fetchById($_SESSION['user_id']);
-$userSet   = $userSet[0];
 
 ?>
 <div id="content">

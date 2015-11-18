@@ -3,6 +3,10 @@ session_start();
 if(!isset($_SESSION['user_id'])){
     header("location:login.php");
 }
+require_once 'user.php';
+$userModel = new user();
+$userSet = $userModel->fetchById($_SESSION['user_id']);
+$userSet = $userSet[0];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +47,7 @@ if(!isset($_SESSION['user_id'])){
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle user" data-toggle="dropdown">
-                                <img src="images/people/110/guy-5.jpg" alt="Bill" class="img-circle" width="60" /> Bill <span class="caret"></span>
+                                <img src="images/profile_images/<?php echo $userSet['profile_pic']; ?>" alt="Bill" class="img-circle" width="60" /> Bill <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="profile.php">Profile</a>
@@ -64,7 +68,7 @@ if(!isset($_SESSION['user_id'])){
             <div data-scrollable>
                 <div class="sidebar-block">
                     <div class="profile">
-                        <img src="images/people/110/guy-6.jpg" alt="people" class="img-circle" />
+                        <img src="images/profile_images/<?php echo $userSet['profile_pic']; ?>" alt="people" class="img-circle" />
                         <h4>Adrian D.</h4>
                     </div>
                 </div>
