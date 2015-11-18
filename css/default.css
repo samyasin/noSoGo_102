@@ -17790,6 +17790,10 @@ fieldset[disabled] .cover.overlay .btn-cover.active {
     width: 100%;
     padding-top: 20px;
 }
+.sidebar-block .profile  img{
+    width: 110px;
+	height:110px;
+}
 .sidebar-block .profile h4 {
     margin-top: 5px;
     color: #fff;
