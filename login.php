@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
@@ -38,78 +38,120 @@ if (isset($_POST['submit'])) {
                             <h4 class="join">Join Now and you can
                                 Share, Comment and Vote on your feed!!</h4>
                             <div class="col-md-6">
-                                <h1> Already a Member  </h1>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading panel-heading-gray">Already a Member </div>
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" role="form"  action="check_login.php" method="POST">                       
 
-                                <div class="signup">
-                                    <form class="form"  method="POST" action="check_login.php">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Email: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                        <input type="text" class="form-control" placeholder="email" name="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Password: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-unlock"></i></span>
+                                                        <input type="text" class="form-control" placeholder="password" name="password">
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <br>
+                                            <div class="form-group">
+                                                <a href="">Forget your Password!!</a>
+                                            </div>
+                                            <div class="form-group last">
+                                                <input type="submit" value="Login" name="submit" class="button"> 
+                                            </div>
+                                        </form>
 
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" name="email" type="email" placeholder="Enter your email">
+                                        <div class="form-group col-lg-6">
+                                            <a href=""> <input type="button" value="Login Via Facebbok" class="facebbok"></a>
                                         </div>
-
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" name="password" type="password" placeholder="Password">
+                                        <div class="form-group col-lg-6">
+                                            <a href=""> <input type="button" value="Login Via Twitter" class="twitter"></a>
                                         </div>
-
-                                        <div class="form-group">
-                                            <a href="">Forget your Password!!</a>
-                                        </div>
-                                        <div class="form-group last">
-                                            <input type="submit" value="Login" name="submit" class="button"> 
-                                        </div>
-                                </div>
-                                </form>
-                                <div class="form-group col-lg-6">
-                                    <a href=""> <input type="button" value="Login Via Facebbok" class="facebbok"></a>
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <a href=""> <input type="button" value="Login Via Twitter" class="twitter"></a>
-                                </div>
+                                    </div> </div>
                             </div>
 
+
+
                             <div class="col-md-6">
-                                <h1>New to NoSoGo? </h1>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading panel-heading-gray">New to NoSoGo? </div>
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" role="form"  method="POST" action="login.php">                       
 
-                                <div class="signup">
-                                    <form class="form"  method="POST" action="login.php">
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" name="email" type="email" placeholder="Enter your email">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" name="password" type="password" placeholder="Password">
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" name="password" type="password" placeholder="Confirm Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <select name="gender" size="1" class="form-control input-lg">
-                                                <option selected>------- Gender -------</option>
-                                                <option>Male</option>
-                                                <option>Female</option>
-                                            </select>
-                                        </div>
-                                        <div class="birth">
-                                            <div class="form-group  col-lg-4">
-                                                <input  class="form-control input-lg" name="day" type="text" placeholder="day">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Email: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                        <input type="email" class="form-control" placeholder="email" name="email">
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="form-group  col-lg-4" >
-                                                <input  class="form-control input-lg" name="month" type="text" placeholder="month">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Password: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-unlock"></i></span>
+                                                        <input type="password" class="form-control" placeholder="password" name="password">
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="form-group  col-lg-4">
-                                                <input  class="form-control input-lg" name="year" type="text" placeholder="year">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Confirm: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-unlock"></i></span>
+                                                        <input type="password" class="form-control" placeholder="confirm password" name="password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Gender: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-male"></i></span>
+                                                        <select name="gender" size="1" class="form-control">
+                                                            <option selected>------- Gender -------</option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Birthday: </label>
+                                                <div class="birth">
 
-                                            </div>
-                                        </div>
-                                        <div class="form-group last">
-                                            <input type="submit" value="Create an Account" name="submit" class="button"> </div>
-                                    </form>
+                                                    <div class="form-group  col-lg-3">
+                                                        <input  class="form-control" name="day" type="text" placeholder="day">
+                                                    </div>
+                                                    <div class="form-group  col-lg-3" >
+                                                        <input  class="form-control" name="month" type="text" placeholder="month">
+                                                    </div>
+                                                    <div class="form-group  col-lg-3">
+                                                        <input  class="form-control" name="year" type="text" placeholder="year">
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group last">
+                                                    <input type="submit" value="Create an Account" name="submit" class="button"> 
+                                                </div>
+                                        </form>
+                                    </div>
 
                                 </div>
-
                             </div>
 
                         </div>
